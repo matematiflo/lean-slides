@@ -7,15 +7,15 @@ import LeanSlides
 
 # About
 
-`Lean Slides` is a tool to 
+`Lean Slides` is a tool to
 automatically generate `reveal.js` slides
 from Markdown comments in the Lean editor.
 
 # Use cases
 
-`Lean Slides` can be used in 
+`Lean Slides` can be used in
 tutorials or demonstrations
-to avoid switching between 
+to avoid switching between
 the slides and the Lean editor.
 -/
 
@@ -60,7 +60,7 @@ In any file that imports `Lean Slides`, type
 into `reveal.js` slides which are rendered in the infoview
 as a [`Widget`](https://github.com/EdAyers/ProofWidgets4).
 
-The tool also features a code action to 
+The tool also features a code action to
 go in and out of draft mode.
 -/
 
@@ -73,13 +73,22 @@ go in and out of draft mode.
 The generated `reveal.js` slides
 render mathematics by default
 using $\KaTeX$.
+-/
+
+#slides Math /-!
+# Rendering math
+ $$ ∑_{k = 1}^n \, k = \frac{n(n +1)}{2}$$
 
 -/
 
 #set_pandoc_options "-V" "theme=white"
 
 #slides Options /-!
-# A test for pandoc options. 
+# A test for pandoc options.
 
 This should use the white theme.
+
+```lean
+def f : Nat -> Nat := fun n => 2 * n
+```
 -/
