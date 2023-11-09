@@ -92,3 +92,8 @@ This should use the white theme.
 def f : Nat -> Nat := fun n => 2 * n
 ```
 -/
+
+def f : Nat -> Nat := fun n => 2 * n
+
+#check @f
+#eval f 3
